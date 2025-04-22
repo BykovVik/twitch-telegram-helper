@@ -12,7 +12,7 @@ type Config struct {
 
 func Load() Config {
 	return Config{
-		TelegramToken: os.Getenv(""),
+		TelegramToken: os.Getenv("TG_API_TOKEN"),
 		TwichToken:    os.Getenv(""),
 		TwichUser:     os.Getenv(""),
 		ChannelName:   os.Getenv(""),
